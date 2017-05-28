@@ -4,6 +4,7 @@
   "description": "Generate and build cmake projects from within Atom.",
   "repository": "https://github.com/siegelaaron94/atom-build-cmake.git",
   "license": "MIT",
+  "package-deps": ["build"],
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
@@ -24,9 +25,10 @@
     "build",
     "clang"
   ],
-  "main": "lib/cmake.js",
+  "main": "lib/index.js",
   "dependencies": {
-    "voucher": "^0.1.2",
-    "glob": "^7.0.3"
+    "atom-package-deps": "^4.6.0",
+    "glob": "^7.0.3",
+    "voucher": "^0.1.2"
   }
 }
